@@ -1,0 +1,34 @@
+.tarjeta {
+  width: 477px;
+  height: 345px;
+  border: 1px solid gray;
+  border-radius: 16px;
+  box-shadow: 0px 0px 2px 0.5px gray;
+  margin: 7px;
+  padding: 18px 21px;
+  display: inline-block;
+}
+.titulo {
+  font-size: 14px;
+  font-weight: 800px;
+  margin-bottom: 13px;
+}
+.descripcion {
+  display: flex;
+}
+.descripcion img {
+  width: 180px;
+  height: 270px;
+  object-fit: cover;
+}
+.descripcion__info {
+  margin: 0 0 0 22px;
+  position: relative;
+}
+.datos {
+  bottom: 0;
+  position: absolute;
+}
+.descripcion p {
+  font-size: 12px;
+}

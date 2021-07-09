@@ -1,3 +1,47 @@
+.main__title {
+  font-size: 18px;
+  font-weight: 800;
+  margin: 15px 30px;
+}
 .main {
-  margin: 15px;
+  margin: 15px 30px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  border: 1px solid gray;
+  border-radius: 12px;
+  width: 366px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 10px;
+  padding: 11px;
+}
+.search input {
+  outline: none;
+  border: 0;
+  width: 90%;
+}
+.filter {
+  height: 40px;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  display: inline-flex;
+  align-items: center;
+}
+.filter img {
+  margin: 0 27px;
+}
+img {
+  display: inline-block;
+}
+.categoria {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 0 23px;
+}
+.categoria img {
+  margin: 0 0px 0 16px;
 }

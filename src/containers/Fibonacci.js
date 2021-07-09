@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/main.css';
 
 const Fibonacci = () => {
   const [value, setValue] = useState('');
@@ -35,12 +36,9 @@ const Fibonacci = () => {
     setList(`Secuencia: ${fibonacci.join('')}`);
   };
   return (
-    <>
-      <Link className='links' to='/'>
-        Volver a la pagina principal
-      </Link>
-      <h1 className=''>Secuencia Fibonacci</h1>
+    <div className='container'>
       <form onSubmit={handleSubmit}>
+        <h1 className='title'>Secuencia Fibonacci</h1>
         <label htmlFor='number'>
           Ingrese un número entero igual o mayor a 1
         </label>
@@ -55,7 +53,10 @@ const Fibonacci = () => {
         <button type='submit'>Ver Secuencia</button>
       </form>
       <div>{list}</div>
-    </>
+      <Link className='links' to='/'>
+        Volver a la pagina principal
+      </Link>
+    </div>
   );
 };
 

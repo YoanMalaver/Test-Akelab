@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/main.css';
 
 const Akelab = () => {
   const [value, setValue] = useState('');
   const [list, setList] = useState('');
+  //captura de valor de input
   const handleChange = (e) => setValue(e.target.value);
 
   const handleSubmit = (e) => {
@@ -25,17 +27,13 @@ const Akelab = () => {
         secuencia.push(i + ', ');
       }
     }
-    setList(`Secuencia: ${secuencia.join('')}`);
+    setList(`${secuencia.join('')}`);
   };
 
   return (
-    <>
-      <Link className='links' to='/'>
-        Volver a la pagina principal
-      </Link>
-
-      <h1 className=''>Secuencia Ake-lab</h1>
+    <div className='container'>
       <form onSubmit={handleSubmit}>
+        <h1 className='title'>Secuencia Ake-lab</h1>
         <label htmlFor='number'>
           Ingrese un número entero igual o mayor a 1
         </label>
@@ -49,8 +47,13 @@ const Akelab = () => {
         />
         <button type='submit'>Ver Secuencia</button>
       </form>
-      <div>{list}</div>
-    </>
+      <div className='secuencia'>
+        <strong>Secuencia:</strong> {list}
+      </div>
+      <Link className='links' to='/'>
+        Volver a la pagina principal
+      </Link>
+    </div>
   );
 };
 

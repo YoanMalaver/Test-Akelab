@@ -11,19 +11,19 @@ const Home = () => {
           <div className='cards__description'>
             <p>Fibonnachi</p>
             <Link className='links' to='/Fibonacci'>
-              ir
+              <strong>Ir</strong>
             </Link>
           </div>
           <div className='cards__description'>
             <p>Ake-Lab</p>
             <Link className='links' to='/Akelab'>
-              ir
+              <strong>Ir</strong>
             </Link>
           </div>
           <div className='cards__description'>
             <p>Mock-up</p>
             <Link className='links' to='/Mockup'>
-              ir
+              <strong>Ir</strong>
             </Link>
           </div>
         </div>
